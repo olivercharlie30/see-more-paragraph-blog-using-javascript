@@ -2,6 +2,7 @@ body{
     background-color: #fff;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -70,6 +71,12 @@ body{
 }
 .card-content .see-more-btn:hover{
     color: #111;
+}
+
+
+.overflow{
+    background-color: yellowgreen;
+    overflow:auto;
 }
 
 @media screen and (max-width: 450px) {

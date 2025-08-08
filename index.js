@@ -37,3 +37,24 @@ cards.forEach((card)=> {
         }
     })
 })
+
+//EXAMPLE IF CLICK THE LINK SHOW RED BACKGROUND
+const boxs = document.querySelectorAll("#box");
+
+boxs.forEach((box)=> {
+    box.addEventListener('click', ()=> {
+        box.classList.toggle("active");
+        box.style.backgroundColor = "red";
+        box.style.cursor = "pointer";
+    })
+})
+
+//EXAMPLE USING EVENT MOUSE OVER
+const elements = document.querySelectorAll("#element");
+elements.forEach((element)=> {
+
+    element.addEventListener("mouseover", ()=> {
+       element.innerHTML="hello world";
+       element.style.backgroundColor = "yellowgreen";
+    })
+})
